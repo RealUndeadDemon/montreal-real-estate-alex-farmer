@@ -70,7 +70,7 @@
 /* COLOR PALETTE & FONTS VARIABLES  */
 
 :root {
-    --header-bg-color: rgb(255, 255, 255);
+    --header-bg-color: #D43F3F;
     --header-fg-color: rgb(1, 35, 70);
   
     --topNav-bg-color: rgb(255, 255, 255);
@@ -93,14 +93,15 @@
     --border-color-light: #ff0000;
     --border-color-dark: #444;
   
-    --titles-color: #1c0263;
+    --titles-color: #471F2C;
     --bodytext-color: #444444;
   
     --accent-color: rgb(63, 77, 159);
     --highlight-color: #f3c;
   
-    --titles-font: "helvetica neue", helvetica, arial, sans-serif;
-    --bodytext-font: "helvetica neue", helvetica, arial, sans-serif;
+    --titles-font: "Prompt", helvetica, arial, sans-serif;
+    --bodytext-font: "Quicksand", helvetica, arial, sans-serif;
+    --branding-font: "Prompt", helvetica, arial, sans-serif;
 
 
    --footerNav-bg-color: rgb(255, 255, 255);
@@ -119,14 +120,15 @@
     https://spencermortensen.com/articles/typographic-scale/  */
 
 
-  h1 { font-size: 2.5em; }
-  h2 { font-size: 2.1459em; }
-  h3 { font-size: 1.842em; }
-  h4 { font-size: 1.5811em; }
-  h5 { font-size: 1.3572em; }
-  h6 { font-size: 1.165em; }
-  p { font-size: 1em; }
-  small { font-size: .8584em; }
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.2em; }
+  h3 { font-size: 1em; }
+  h4 { font-size: 0.8em; }
+  h5 { font-size: 0.6em; }
+  h6 { font-size: 0.6em; }
+  p { font-size: 0.8em; 
+      margin: 0.25rem auto 1rem auto}
+  small { font-size: .5em; }
   
   legend {font-size: 1.842em; }
   label {font-size: 1.581em;}
@@ -146,6 +148,7 @@
 
   h1,h2,h3,h4,h5,h6,label,legend {
     font-family: var(--titles-font);
+    font-weight: 500;
     color: var(--titles-color);
   }
   
@@ -164,6 +167,7 @@ header .branding {
 	width: 60%;
 	justify-content: space-between;
   max-width: 16.25rem;
+  font: var(--branding-font)
 }
   
   img.custom-logo {
@@ -203,19 +207,22 @@ header .branding {
  .primary-menu li a:active {color: var(--topNav-link-color-active);}
   
 .flex-container {
-  width: 98vw;
-  margin: 0 auto;
+  width: 90vw;
+  margin: 0 auto auto 1em;
+}
+
+h1 { 
+  margin: 1rem auto 0.5rem 0.5em;
 }
 
  aside {
-    font-size: small;
- }
+    font-size: small;}
   
   figure {}
   
   figcaption {}
   
-  h2+p {}
+  p+h2 {margin: 1.5rem auto 0 auto;}
   
   H2+ul, h2+ol {}
   
@@ -229,7 +236,7 @@ header .branding {
   
   h2+table {}
 
-  h2+h3 {}
+  h2+h3 {margin: 0.2rem auto 0 auto;}
   
   table {}
   
@@ -237,17 +244,20 @@ header .branding {
   
   blockquote {}
   
-  h3+p {}
+  /* h3+p {margin: 0.25rem auto 0 auto;} */
   
   section>h2 {}
   
   form label {}
+
+#comment{width: 85vw;
+  height: 30vw;}
   
   form label:first-child {}
   
   form input {}
   
-  form input:last-child {}
+  form input:last-child { }
   
   .copyright {}
 
