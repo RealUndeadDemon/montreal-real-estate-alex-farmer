@@ -127,7 +127,8 @@
   h5 { font-size: 0.6em; }
   h6 { font-size: 0.6em; }
   p { font-size: 0.8em; 
-      margin: 0.25rem auto 1rem auto}
+      margin: 0.25rem auto 1rem auto;
+      color:var(--bodytext-color)}
   small { font-size: .5em; }
   
   legend {font-size: 1.842em; }
@@ -222,7 +223,7 @@ h1 {
   
   figcaption {}
   
-  p+h2 {margin: 1.5rem auto 0 auto;}
+  h2, h3 {margin: 1.5rem auto 0 auto;}
   
   H2+ul, h2+ol {}
   
@@ -236,7 +237,24 @@ h1 {
   
   h2+table {}
 
-  h2+h3 {margin: 0.2rem auto 0 auto;}
+  h2+h3 {margin: 0.3rem auto 0 auto;}
+
+  ul, ol{ 
+    list-style: circle;
+    font-size: 0.8em;
+    margin: 0.3rem auto 1.5rem 1rem;}
+
+    ul, ol, p{
+      line-height: 1.5em;
+    }
+  address{
+  margin:0.3rem auto 0 auto;  
+  font-size: 0.85em;
+  line-height:1.25rem}
+ 
+  strong{font-weight:800;}
+
+
   
   table {}
   
@@ -248,9 +266,13 @@ h1 {
   
   section>h2 {}
   
-  form label {}
+  form label {
+    font-size: 1em;
+    font-weight: 400;
+  }
 
-#comment{width: 85vw;
+#comment{
+  width: 85vw;
   height: 30vw;}
   
   form label:first-child {}
@@ -284,9 +306,19 @@ h1 {
     flex-direction: column;
     max-width: 90vw;
     padding: 1rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    background-color: var(--header-bg-color);
+    
   }
-
+  .jenn > h4, .jenn > h3{
+    color:#fff
+  }
+   .jenn > p{
+  color:aliceblue;
+  }
+ .jenn h3+h4{
+  margin-top: 0.3rem;
+ }
   
 /* required wordpress classes */
 
